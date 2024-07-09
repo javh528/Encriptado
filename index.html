@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="Styles/stilos.css">
+
+</head>
+<body>
+    <header class="header">
+        <img class="header.Icono" src="Icono/alura.png">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <textarea class="caja_texto" id="caja_texto" placeholder="Ingresa el texto aqui" rows="28" cols="10"></textarea>
+            <div class="terminos">
+                <img class="Presentacion_icono" src="Icono/IconoExclamacion.png" style="float: left;">
+                <p>Solo minusculas y sin acento</p>
+            </div>
+            <div class="presentacion_Botones">
+                <input class="boton-encriptar" type="button" value="Encriptar" onclick="encriptar()">
+                <input class="boton-desencriptar" type="button" value="Desencriptar" onclick="desencriptar()" >
+            </div> 
+        </section>
+        <div class="encriptado">
+            <img src="Imagenes/Muñeco.png" alt="Encrita el texto" id="Muneco_imagen">
+                <div class="mensaje_encriptado" id="mensaje_encriptado">
+                    <h2 id="titulo_mensaje">Ningun mensaje encontrado</h2>
+                    <p id="parrafo">Ingresa el texto que quieras encriptar o desencriptar</p>
+                </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <footer class="footer">
+        <p>Desarrollado por Julian Andres VIdal</p>
+    </footer>
+</body>
+</html>
